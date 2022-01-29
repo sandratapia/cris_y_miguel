@@ -1,0 +1,207 @@
+body {
+  background-image: url(../images/pageBackground.png);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 10px;
+  @media all and (min-width: 768px) {
+    margin: 0 150px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+.wrapper_map {
+  margin: 0px;
+  @media all and (min-width: 768px) {
+    margin: 0 150px;
+  }
+}
+
+.main {
+  font-family: "Montserrat", sans-serif;
+  .text__height {
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  .center {
+    text-align: center;
+  }
+  .title__font {
+    font-family: "Dancing Script", cursive;
+    font-size: 34px;
+    @media all and (min-width: 768px) {
+      font-size: 41px;
+    }
+  }
+  .aboutus {
+    .profiles {
+      display: grid;
+      grid-template-columns: 1fr 0.4fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      position: relative;
+      .one {
+        grid-area: 1 / 1 / 3 / 2;
+      }
+      .two {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .three {
+        grid-area: 1 / 3 / 3 / 4;
+      }
+      .novios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          text-align: center;
+          padding: 5px;
+        }
+        .nov {
+          font-family: "Thank";
+          font-size: 24px;
+          @media all and (min-width: 768px) {
+            font-size: 33px;
+          }
+        }
+        .no_padding {
+          padding: 0;
+          margin: 0;
+          margin-top: 10px;
+          font-weight: 700;
+        }
+      }
+      .container-and {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        .anpersand {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 50px;
+          margin-top: 15px;
+          @media all and (min-width: 375px) {
+            width: 58px;
+            margin-top: 25px;
+          }
+          @media all and (min-width: 425px) {
+            width: 65px;
+            margin-top: 42px;
+          }
+          @media all and (min-width: 768px) {
+            width: 120px;
+            margin-bottom: 42px;
+          }
+          @media all and (min-width: 1024px) {
+            width: 145px;
+            margin-top: 52px;
+            margin-bottom: 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .profile {
+      .emoji {
+        font-size: 100px;
+      }
+    }
+  }
+  .countdown {
+    .container {
+      text-align: center;
+      ul {
+        padding: 0px;
+      }
+      li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 5px;
+        text-transform: uppercase;
+      }
+
+      li span {
+        display: block;
+        font-size: 18px;
+      }
+
+      .emoji {
+        display: none;
+        padding: 1rem;
+      }
+
+      .emoji span {
+        font-size: 4rem;
+        padding: 0 0.5rem;
+      }
+    }
+    .details {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      img {
+        width: 100%;
+        @media all and (min-width: 768px) {
+          width: 41%;
+        }
+      }
+    }
+  }
+  .location {
+    #map {
+      width: 100%;
+      height: 400px;
+      box-shadow: 5px 5px 5px #888;
+    }
+    .leaflet-popup-content {
+      a {
+        color: black;
+        font-weight: 700;
+      }
+    }
+  }
+  .photos {
+    .details {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      img {
+        width: 100%;
+        @media all and (min-width: 768px) {
+          width: 30%;
+        }
+      }
+    }
+  }
+  .bye {
+    .emoji {
+      font-size: 25px;
+    }
+    .ellos {
+      height: 250px;
+      width: 250px;
+      padding-bottom: 30px;
+      margin: auto;
+      text-align: center;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

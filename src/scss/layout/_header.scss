@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Thank";
+  src: url("../fonts/Thankyou.ttf");
+}
+
+.header {
+  height: 480px;
+  .hero {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/headerbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    @media all and (min-width: 768px) {
+      background-size: contain;
+    }
+    img {
+      background-color: transparentize(#f4f4f2, 0.55);
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      height: 100%;
+    }
+    .title {
+      font-family: "Thank";
+      font-size: 39px;
+      color: #5a111a;
+      position: relative;
+      top: 37px;
+      left: -4px;
+      @media all and (min-width: 768px) {
+        font-size: 62px;
+      }
+    }
+  }
+}

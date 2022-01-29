@@ -1,0 +1,101 @@
+.hamburger {
+  position: fixed;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  padding: 20px 20px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.25s
+    cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  z-index: 1002;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamburger.is-active {
+  background-color: none;
+}
+._layer {
+  background: #5a111a;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  width: 28px;
+  height: 4px;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+
+.hamburger.is-active .-top {
+  -webkit-transform: translateY(200%) rotate(45deg) !important;
+  -ms-transform: translateY(200%) rotate(45deg) !important;
+  transform: translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid {
+  opacity: 0;
+}
+.hamburger.is-active .-bottom {
+  -webkit-transform: translateY(-200%) rotate(135deg) !important;
+  -ms-transform: translateY(-200%) rotate(135deg) !important;
+  transform: translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active {
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal {
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  z-index: 1001;
+  width: 100%;
+  @media all and (min-width: 768px) {
+    width: 304px;
+    padding: 0 30px;
+  }
+}
+.menuppal ul {
+  margin: 0;
+  padding: 0;
+}
+.menuppal ul li {
+  list-style: none;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 3em;
+  height: 3em;
+  color: #efcec9;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+}
+.menuppal ul li a {
+  text-decoration: none;
+  color: #e8b6af;
+}
+.menuppal ul li a:hover {
+  text-decoration: none;
+  color: #efcec9;
+}
+
+.hidden{
+	display: none;
+}
+.normal{
+	display: inherit;
+}

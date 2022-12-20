@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
     hour = minute * 60,
     day = hour * 24;
 
-  let birthday = 'May 20, 2022 00:00:00',
+  let birthday = 'Sep 20, 2024 00:00:00',
     countDown = new Date(birthday).getTime(),
     x = setInterval(function () {
       let now = new Date().getTime(),
